@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon -L",
-    "test": "mocha -w ./tests/**/*.spec.js"
+    "test": "mocha -w ./tests/**/*.spec.js",
+    "docker-up":"docker-compose --env-file .env up postgres_Dogs pgadmin_Dogs",
+    "docker-down":"docker-compose down",
+    "bash-postgres":"docker-compose exec postgres_Dogs bash"
   },
   "author": "Henry",
   "license": "ISC",
