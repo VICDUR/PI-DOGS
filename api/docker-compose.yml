@@ -15,6 +15,7 @@ services:
 
   pgadmin_Dogs:
     image: dpage/pgadmin4
+    restart: always
     environment:
       - PGADMIN_DEFAULT_EMAIL=vic@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=ROOT
